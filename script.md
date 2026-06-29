@@ -62,13 +62,6 @@ with open('etablissements.csv', 'w', newline='') as f:
     w.writerows(rows)
 ```
 
-## 3. Résultat
-
-- **546 établissements** : 386 restaurants, 160 hôtels
-- Colonnes : `nom`, `type`, `note` (aléatoire 1.0–5.0), `x` (longitude), `y` (latitude)
-- Projection : WGS 84 (EPSG:4326)
-- Source : OpenStreetMap (© contributeurs OSM, licence ODbL)
-
 ---
 
 # Récupération des quartiers (fokontany) — données officielles HDX
@@ -90,8 +83,6 @@ Lien : https://data.humdata.org/dataset/cod-ab-mdg
 # Télécharger le shapefile complet (ADM0-ADM4)
 wget 'https://data.humdata.org/dataset/26fa506b-0727-4d9d-a590-d2abee21ee22/resource/ed94d52e-349e-41be-80cb-62dc0435bd34/download/mdg_adm_bngrc_ocha_20181031_shp.zip'
 ```
-
-> Le fichier `quartiers.geojson` contient déjà les **192 fokontany** des 6 arrondissements d'Antananarivo centre, extraits de ce jeu de données.
 
 ## Structure des données
 
